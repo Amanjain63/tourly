@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Tourly</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <style>
+        :root {
+            --primary-color: #2a6b84;
+            --secondary-color: #f39c12;
+            --dark-color: #333;
+            --light-color: #f9f9f9;
+            --text-color: #555;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }       
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        h1, h2, h3 {
+            color: var(--dark-color);
+            margin-bottom: 1rem;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        
+        .about-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1506929562872-bb421503ef21?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+        
+        .about-title {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: rgb(210, 195, 195);
+        }
+        
+        .about-subtitle {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        
+        .about-section {
+            padding: 80px 0;
+        }
+        
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        
+        .about-text {
+            flex: 1;
+        }
+        
+        .about-text h2 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .about-text h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 3px;
+            background-color: var(--secondary-color);
+        }
+        
+        .about-image {
+            flex: 1;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .about-image img {
+            transition: transform 0.5s;
+        }
+        
+        .about-image:hover img {
+            transform: scale(1.05);
+        }
+        
+       
+        .values-section {
+            padding: 60px 0;
+            background-color: #f1f7fa;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 2.2rem;
+            color: var(--primary-color);
+        }
+        
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 3px;
+            background-color: var(--secondary-color);
+            margin: 15px auto 0;
+        }
+        
+        .values-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        
+        .value-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            flex: 1;
+            min-width: 250px;
+            max-width: 350px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+        
+        .value-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .value-card ion-icon {
+            font-size: 3rem;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+        }
+        
+        .value-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .team-section {
+            padding: 80px 0;
+        }
+        
+        .team-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        
+        .team-member {
+            background-color: white;
+            width: 280px;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s;
+        }
+        
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px;
+            border: 5px solid #f1f7fa;
+        }
+        
+        .team-member h3 {
+            color: var(--primary-color);
+        }
+        
+        .team-member p {
+            color: var(--secondary-color);
+            font-weight: 500;
+        }
+ 
+        .cta-section {
+            padding: 80px 0;
+            text-align: center;
+            background: linear-gradient(rgba(42, 107, 132, 0.9), rgba(42, 107, 132, 0.9)), url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .cta-section p {
+            max-width: 700px;
+            margin: 0 auto 30px;
+            font-size: 1.2rem;
+        }
+        
+        .btn-primary {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary:hover {
+            background-color: #e67e22;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header_top">
+            <div class="nav_first">
+                <div class="nav_logo">
+                    <img src="logo.svg" alt="Tourly Logo">
+                </div>
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    ☰
+                </div>
+            </div>
+            <nav>
+                <ul class="nav_links" id="navLinks">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <!-- <li><a href="destinations.html">DESTINATION</a></li> -->
+                    <li><a href="packages.html">PACKAGES</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+            <div class="nav_button">
+                <button>BOOK NOW</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-hero">
+            <div class="container">
+                <h1 class="about-title">About Tourly</h1>
+                <p class="about-subtitle">Discover our story and what makes us different</p>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>Our Journey</h2>
+                        <p>Founded in 2010, Tourly began as a small team of travel enthusiasts with a shared passion for creating unforgettable experiences. What started as a local tour operator has grown into an internationally recognized travel company serving thousands of happy travelers each year.</p>
+                        <p>We believe travel has the power to transform lives, broaden perspectives, and create lasting memories. Our mission is to make these transformative experiences accessible to everyone.</p>
+                        <p>With over a decade of experience, we've perfected the art of blending adventure with comfort, culture with relaxation, and discovery with personal growth. Our team of expert travel designers works tirelessly to create itineraries that inspire, educate, and delight.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Our team traveling">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="values-section">
+            <div class="container">
+                <h2 class="section-title">Our Core Values</h2>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <ion-icon name="heart-outline"></ion-icon>
+                        <h3>Passion</h3>
+                        <p>We're driven by our love for travel and sharing amazing experiences with our clients.</p>
+                    </div>
+                    <div class="value-card">
+                        <ion-icon name="shield-checkmark-outline"></ion-icon>
+                        <h3>Integrity</h3>
+                        <p>We operate with honesty and transparency in all our dealings.</p>
+                    </div>
+                    <div class="value-card">
+                        <ion-icon name="sparkles-outline"></ion-icon>
+                        <h3>Excellence</h3>
+                        <p>We strive to deliver exceptional service in every aspect of our business.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="team-section">
+            <div class="container">
+                <h2 class="section-title">Meet Our Team</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Sarah Johnson">
+                        <h3>Sarah Johnson</h3>
+                        <p>Founder & CEO</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen">
+                        <h3>Michael Chen</h3>
+                        <p>Operations Director</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Priya Patel">
+                        <h3>Priya Patel</h3>
+                        <p>Customer Experience</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Ready to Start Your Adventure?</h2>
+                <p>Let our experts craft the perfect travel experience for you.</p>
+                <button class="btn-primary">Contact Us</button>
+            </div>
+        </section>
+    </main>    
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <img src="logo.svg" alt="Tourly logo">
+                    </a>
+                    <p class="footer-text">
+                        A unique place with remarkable features, offering grace, charm, and elegance. A place where sophistication meets comfort, making every moment unforgettable.
+                    </p>
+                </div>
+                <div class="footer-contact">
+                    <h4 class="contact-title">Contact Us</h4>
+                    <p class="contact-text">
+                        Feel free to contact and reach us !!
+                    </p>
+                    <div>
+                        <div class="contact-item">
+                            <ion-icon name="call-outline"></ion-icon>
+                            <a href="tel:+01123456790" class="contact-link">+01 (123) 4567 90</a>
+                        </div>
+                        <div class="contact-item">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <a href="mailto:info.tourly.com" class="contact-link">info.tourly.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <ion-icon name="location-outline"></ion-icon>
+                            <address>3146 Koontz, California</address>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-form">
+                    <p class="form-text">
+                        Subscribe our newsletter for more update & news !!
+                    </p>
+                    <form action="" class="form-wrapper">
+                        <input type="email" name="email" class="input-field" placeholder="Enter Your Email" required>
+                        <button type="submit" class="btn btn-secondary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="copyright">
+                    &copy; 2022 All rights reserved
+                </p>
+                <ul class="footer-bottom-list">
+                    <li>
+                        <a href="#" class="footer-bottom-link">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-bottom-link">Term & Condition</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-bottom-link">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

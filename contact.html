@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Wanderlust Explorers</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header_top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+        }
+        
+       
+        
+        
+        .contact-section {
+            padding: 60px 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .contact-section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+            color: #007bff;
+        }
+        
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .contact-form input,
+        .contact-form textarea {
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+        
+        .contact-form button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+       
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+        }
+     
+        @media (max-width: 992px) {
+            .header_top {
+                padding: 15px 3%;
+            }
+            
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background-color: #fff;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            }
+            
+            nav ul.show {
+                display: flex;
+            }
+            
+            nav ul li a {
+                padding: 15px;
+                border-bottom: 1px solid #eee;
+            }
+            
+            .menu-toggle {
+                display: block;
+            }
+            
+            .nav_button {
+                display: none;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .contact-section h2 {
+                font-size: 2rem;
+            }
+            
+            .contact-section {
+                padding: 40px 3%;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .header_top {
+                padding: 10px;
+            }
+            
+            .nav_logo img {
+                height: 30px;
+            }
+            
+            .contact-section h2 {
+                font-size: 1.8rem;
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header_top">
+            <div class="nav_logo">
+                <img src="logo.svg" alt="Wanderlust Explorers Logo">
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                ☰
+            </div>
+            <nav>
+                <ul class="nav_links" id="navLinks">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <!-- <li><a href="destinations.html">DESTINATION</a></li> -->
+                    <li><a href="packages.html">PACKAGES</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+            <div class="nav_button">
+                <button>BOOK NOW</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <div class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <img src="logo.svg" alt="Tourly logo">
+                    </a>
+                    <p class="footer-text">
+                        A unique place with remarkable features, offering grace, charm, and elegance. A place where sophistication meets comfort, making every moment unforgettable.
+                    </p>
+                </div>
+                <div class="footer-contact">
+                    <h4 class="contact-title">Contact Us</h4>
+                    <p class="contact-text">
+                        Feel free to contact and reach us !!
+                    </p>
+                    <div>
+                        <div class="contact-item">
+                            <ion-icon name="call-outline"></ion-icon>
+                            <a href="tel:+01123456790" class="contact-link">+01 (123) 4567 90</a>
+                        </div>
+                        <div class="contact-item">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <a href="mailto:info.tourly.com" class="contact-link">info.tourly.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <ion-icon name="location-outline"></ion-icon>
+                            <address>3146 Koontz, California</address>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-form">
+                    <p class="form-text">
+                        Subscribe our newsletter for more update & news !!
+                    </p>
+                    <form action="" class="form-wrapper">
+                        <input type="email" name="email" class="input-field" placeholder="Enter Your Email" required>
+                        <button type="submit" class="btn btn-secondary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="copyright">
+                    &copy; 2022 All rights reserved
+                </p>
+                <ul class="footer-bottom-list">
+                    <li>
+                        <a href="#" class="footer-bottom-link">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-bottom-link">Term & Condition</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-bottom-link">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('show');
+        }
+    </script>
+
+</body>
+</html>

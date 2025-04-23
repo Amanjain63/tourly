@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dubai Luxury Escape - Book Now</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .package-title {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .package-subtitle {
+            color: #7f8c8d;
+            font-size: 1.2em;
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        
+        .package-details {
+            flex: 2;
+            min-width: 300px;
+        }
+        
+        .booking-form {
+            flex: 1;
+            background: #f9f9f9;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: #d35400;
+            border-bottom: 2px solid #d35400;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        
+        .highlight-box {
+            background: #fef5e7;
+            padding: 15px;
+            border-left: 4px solid #d35400;
+            margin: 20px 0;
+        }
+        
+        .facilities-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        
+        .facility-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .icon {
+            margin-right: 10px;
+            color: #d35400;
+        }
+        
+        .itinerary-day {
+            margin-bottom: 20px;
+        }
+        
+        .day-title {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        form input, form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        .price {
+            font-size: 1.8em;
+            color: #e74c3c;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+        
+        .btn {
+            background: #d35400;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 1.1em;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #a04000;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            margin: 20px 0;
+        }
+        
+        .gallery img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 4px;
+            transition: transform 0.3s;
+        }
+        
+        .gallery img:hover {
+            transform: scale(1.03);
+        }
+        
+        .testimonial {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 10px 0;
+            font-style: italic;
+        }
+        
+        .testimonial-author {
+            font-weight: bold;
+            text-align: right;
+            margin-top: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <h1 class="package-title">Dubai Luxury Escape</h1>
+        <p class="package-subtitle">5 Days & 4 Nights of Opulence</p>
+    </div>
+    
+    <div class="container">
+        <div class="package-details">
+            <div class="highlight-box">
+                <p><i class="fas fa-star icon"></i> <strong>Exclusive Package</strong> - Limited slots available!</p>
+                <p><i class="fas fa-shield-alt icon"></i> <strong>Free Cancellation</strong> - Cancel up to 15 days before departure</p>
+            </div>
+            
+            <div class="gallery">
+                <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090" alt="Burj Khalifa">
+                <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4" alt="Palm Jumeirah">
+                <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c" alt="Desert Safari">
+                <img src="https://images.unsplash.com/photo-1538964173425-93864d73960a" alt="Dubai Marina">
+            </div>
+            
+            <div class="section">
+                <h2>Package Overview</h2>
+                <p>Experience the grandeur of Dubai with our luxurious 5-day escape. From the world’s tallest building to golden desert adventures, this package offers the best of modern and traditional Dubai.</p>
+                <p>Stay in 5-star hotels, enjoy private tours, and witness breathtaking landmarks.</p>
+            </div>
+            
+            <div class="section">
+                <h2>Facilities & Inclusions</h2>
+                <div class="facilities-list">
+                    <div class="facility-item">
+                        <i class="fas fa-hotel icon"></i>
+                        <span>4 nights in 5-star hotels (Burj Al Arab or similar)</span>
+                    </div>
+                    <div class="facility-item">
+                        <i class="fas fa-utensils icon"></i>
+                        <span>Daily breakfast & 3 gourmet dinners</span>
+                    </div>
+                    <div class="facility-item">
+                        <i class="fas fa-car icon"></i>
+                        <span>Private luxury car transfers</span>
+                    </div>
+                    <div class="facility-item">
+                        <i class="fas fa-user-tie icon"></i>
+                        <span>Personal tour guide (English/Arabic)</span>
+                    </div>
+                    <div class="facility-item">
+                        <i class="fas fa-ticket-alt icon"></i>
+                        <span>Burj Khalifa At The Top (Level 124)</span>
+                    </div>
+                    <div class="facility-item">
+                        <i class="fas fa-camera icon"></i>
+                        <span>Desert safari with BBQ dinner & belly dance</span>
+                    </div>
+                    <div class="facility-item">
+                        <i class="fas fa-ship icon"></i>
+                        <span>Dhow cruise with dinner</span>
+                    </div>
+                    <div class="facility-item">
+                        <i class="fas fa-wifi icon"></i>
+                        <span>Free Wi-Fi in all hotels</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Daily Itinerary</h2>
+                
+                <div class="itinerary-day">
+                    <div class="day-title">Day 1: Arrival in Dubai</div>
+                    <p>Arrive at Dubai International Airport (DXB). Private transfer to your luxury hotel. Evening at leisure—explore Dubai Mall & witness the Dubai Fountain show.</p>
+                </div>
+                
+                <div class="itinerary-day">
+                    <div class="day-title">Day 2: Burj Khalifa & City Tour</div>
+                    <p>Visit the Burj Khalifa (At The Top), Dubai Mall Aquarium, and Souk Madinat Jumeirah. Enjoy a sunset dinner at At.mosphere (optional upgrade).</p>
+                </div>
+                
+                <div class="itinerary-day">
+                    <div class="day-title">Day 3: Desert Safari Adventure</div>
+                    <p>Morning at leisure. Afternoon desert safari with dune bashing, camel ride, and a traditional Arabian BBQ under the stars.</p>
+                </div>
+                
+                <div class="itinerary-day">
+                    <div class="day-title">Day 4: Palm Jumeirah & Marina</div>
+                    <p>Visit Atlantis The Palm, Aquaventure Waterpark (optional), and enjoy a luxury yacht tour in Dubai Marina.</p>
+                </div>
+                
+                <div class="itinerary-day">
+                    <div class="day-title">Day 5: Departure</div>
+                    <p>Private transfer to the airport for your departure flight.</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>What Our Guests Say</h2>
+                <div class="testimonial">
+                    <p>"The desert safari was the highlight of our trip! The private guide made everything seamless. Worth every penny!"</p>
+                    <div class="testimonial-author">- Jessica, USA</p>
+                </div>
+                <div class="testimonial">
+                    <p>"Staying at Burj Al Arab was a dream come true. The views from Burj Khalifa were breathtaking."</p>
+                    <div class="testimonial-author">- Ahmed, UK</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="booking-form">
+            <h2>Book This Package</h2>
+            
+            <div class="price">$2,499 <span style="font-size: 0.6em; color: #7f8c8d;">per person</span></div>
+            <p style="color: #27ae60;"><i class="fas fa-check-circle"></i> Limited slots available for October!</p>
+            
+            <form>
+                <label for="departure-date">Departure Date</label>
+                <select id="departure-date" required>
+                    <option value="">Select date</option>
+                    <option value="2023-10-15">October 15, 2023</option>
+                    <option value="2023-11-05">November 5, 2023</option>
+                    <option value="2023-12-10">December 10, 2023</option>
+                </select>
+                
+                <label for="travelers">Number of Travelers</label>
+                <select id="travelers" required>
+                    <option value="1">1 traveler</option>
+                    <option value="2" selected>2 travelers</option>
+                    <option value="3">3 travelers</option>
+                    <option value="4">4 travelers</option>
+                </select>
+                
+                <label for="room-type">Room Type</label>
+                <select id="room-type" required>
+                    <option value="deluxe">Deluxe Room</option>
+                    <option value="suite">Suite (+$500)</option>
+                    <option value="penthouse">Penthouse (+$1,200)</option>
+                </select>
+                
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+                
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" required>
+                
+                <label for="special-requests">Special Requests</label>
+                <textarea id="special-requests" rows="3" style="width: 100%; padding: 10px;"></textarea>
+                
+                <button type="submit" class="btn">Confirm Booking</button>
+            </form>
+            
+            <div style="margin-top: 20px; font-size: 0.9em;">
+                <p><i class="fas fa-lock"></i> Secure payment processing</p>
+                <p><i class="fas fa-phone"></i> Need help? Call +1 (800) 555-6789</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Bali Adventure - Book Now</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .package-title {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .package-subtitle {
+            color: #7f8c8d;
+            font-size: 1.2em;
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        
+        .package-details {
+            flex: 2;
+            min-width: 300px;
+        }
+        
+        .booking-form {
+            flex: 1;
+            background: #f9f9f9;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: #3498db;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        
+        .highlight-box {
+            background: #e8f4fc;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+        }
+        
+        .facilities-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        
+        .facility-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .icon {
+            margin-right: 10px;
+            color: #3498db;
+        }
+        
+        .itinerary-day {
+            margin-bottom: 20px;
+        }
+        
+        .day-title {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        form input, form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        .price {
+            font-size: 1.8em;
+            color: #e74c3c;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+        
+        .btn {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 1.1em;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #2980b9;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            margin: 20px 0;
+        }
+        
+        .gallery img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 4px;
+            transition: transform 0.3s;
+        }
+        
+        .gallery img:hover {
+            transform: scale(1.03);
+        }
+        
+        .testimonial {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 10px 0;
+            font-style: italic;
+        }
+        
+        .testimonial-author {
+            font-weight: bold;
+            text-align: right;
+            margin-top: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <h1 class="package-title">Premium Bali Adventure</h1>
+        <p class="package-subtitle">7 Days & 6 Nights of Tropical Paradise</p>
+    </div>
+    
+    <div class="container">
+        <div class="package-details">
+            <div class="highlight-box">
+                <p><i class="fas fa-star icon"></i> <strong>Bestseller Package</strong> - Over 500 happy travelers this year!</p>
+                <p><i class="fas fa-shield-alt icon"></i> <strong>Flexible Cancellation</strong> - Free cancellation up to 30 days before departure</p>
+            </div>
+            
+            <div class="gallery">
+                <img src="images/balibeach.jpg" alt="Bali Beach">
+                <img src="images/Ubud Rice Terraces.jpg" alt="Ubud Rice Terraces">
+                <img src="images/Uluwatu Temple.jpg" alt="Temple">
+                <img src="images/Balinese Cultural Dance.jpeg" alt="Cultural Dance">
+            </div>
+            
+            <div class="section">
+                <h2>Package Overview</h2>
+                <p>Experience the best of Bali with our carefully curated 7-day adventure. This package combines cultural immersion, natural wonders, and luxurious relaxation to give you the ultimate Balinese experience.</p>
+                <p>From the stunning beaches of Seminyak to the spiritual heart of Ubud, and the majestic temples of Uluwatu, this tour showcases Bali's diverse beauty.</p>
+            </div>
+            
+            <div class="section">
+                <h2>Facilities & Inclusions</h2>
+                <div class="facilities-list">
+                    <div class="facility-item">
+                        <i class="fas fa-hotel icon"></i>
+                        <span>6 nights accommodation in 4-star hotels</span>
+                    </div>
+                    <div class="facility-item">
+                        <i class="fas fa-utensils icon"></i>
+                        <span>Daily breakfast and 4 special dinners</span>
+                    </div>
+                    <div class="facility-item">
+                        <i class="fas fa-car icon"></i>
+                        <span>Private AC transportation throughout</span>
+                    </div>
+                    <div class="facility-item">
+                        <i class="fas fa-user-tie icon"></i>
+                        <span>English-speaking tour guide</span>
+                    </div>
+                    <div class="facility-item">
+                        <i class="fas fa-ticket-alt icon"></i>
+                        <span>All entrance fees to attractions</span>
+                    </div>
+                    <div class="facility-item">
+                        <i class="fas fa-umbrella-beach icon"></i>
+                        <span>Beach club access in Seminyak</span>
+                    </div>
+                    <div class="facility-item">
+                        <i class="fas fa-swimming-pool icon"></i>
+                        <span>Infinity pool access at all hotels</span>
+                    </div>
+                    <div class="facility-item">
+                        <i class="fas fa-wifi icon"></i>
+                        <span>Complimentary WiFi in vehicles</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Daily Itinerary</h2>
+                
+                <div class="itinerary-day">
+                    <div class="day-title">Day 1: Arrival in Bali - Seminyak</div>
+                    <p>Arrive at Ngurah Rai International Airport where our representative will greet you. Transfer to your Seminyak hotel. Evening at leisure to explore the famous Seminyak beach and vibrant nightlife.</p>
+                </div>
+                
+                <div class="itinerary-day">
+                    <div class="day-title">Day 2: Uluwatu Temple & Kecak Dance</div>
+                    <p>Visit the stunning Uluwatu Temple perched on a cliff overlooking the Indian Ocean. In the evening, witness the mesmerizing Kecak Fire Dance performance at sunset.</p>
+                </div>
+                
+                <div class="itinerary-day">
+                    <div class="day-title">Day 3: Ubud Cultural Tour</div>
+                    <p>Explore the cultural heart of Bali. Visit the Sacred Monkey Forest, Tegalalang Rice Terraces, and traditional art markets. Enjoy a Balinese cooking class in the evening.</p>
+                </div>
+                
+                <div class="itinerary-day">
+                    <div class="day-title">Day 4: Mount Batur Sunrise Trek</div>
+                    <p>Early morning trek to Mount Batur to witness a spectacular sunrise. Enjoy breakfast with a view of the volcanic landscape. Afternoon relaxation at hot springs.</p>
+                </div>
+                
+                <div class="itinerary-day">
+                    <div class="day-title">Day 5: Nusa Penida Island Excursion</div>
+                    <p>Full-day trip to Nusa Penida to visit Kelingking Beach, Angel's Billabong, and Broken Beach. Snorkeling opportunity at Crystal Bay.</p>
+                </div>
+                
+                <div class="itinerary-day">
+                    <div class="day-title">Day 6: Free Day & Spa Experience</div>
+                    <p>Day at leisure to explore on your own or relax at your hotel. Included 90-minute traditional Balinese spa treatment in the evening.</p>
+                </div>
+                
+                <div class="itinerary-day">
+                    <div class="day-title">Day 7: Departure</div>
+                    <p>Transfer to the airport for your departure flight, with Bali souvenirs and unforgettable memories.</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>What Our Guests Say</h2>
+                <div class="testimonial">
+                    <p>"This tour exceeded all our expectations! The guides were knowledgeable, the hotels were beautiful, and the itinerary was perfectly balanced between activities and relaxation."</p>
+                    <div class="testimonial-author">- Sarah & Mark, Australia</p>
+                </div>
+                <div class="testimonial">
+                    <p>"The Mount Batur sunrise trek was challenging but absolutely worth it. The views were breathtaking and something we'll never forget."</p>
+                    <div class="testimonial-author">- David, UK</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="booking-form">
+            <h2>Book This Package</h2>
+            
+            <div class="price">$1,299 <span style="font-size: 0.6em; color: #7f8c8d;">per person</span></div>
+            <p style="color: #27ae60;"><i class="fas fa-check-circle"></i> 3 spots remaining for June departure</p>
+            
+            <form>
+                <label for="departure-date">Departure Date</label>
+                <select id="departure-date" required>
+                    <option value="">Select date</option>
+                    <option value="2023-06-15">June 15, 2023</option>
+                    <option value="2023-07-10">July 10, 2023</option>
+                    <option value="2023-08-05">August 5, 2023</option>
+                </select>
+                
+                <label for="travelers">Number of Travelers</label>
+                <select id="travelers" required>
+                    <option value="1">1 traveler</option>
+                    <option value="2" selected>2 travelers</option>
+                    <option value="3">3 travelers</option>
+                    <option value="4">4 travelers</option>
+                </select>
+                
+                <label for="room-type">Room Type</label>
+                <select id="room-type" required>
+                    <option value="double">Double Room</option>
+                    <option value="twin">Twin Room</option>
+                    <option value="single">Single Room (+$250)</option>
+                </select>
+                
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+                
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" required>
+                
+                <label for="special-requests">Special Requests</label>
+                <textarea id="special-requests" rows="3" style="width: 100%; padding: 10px;"></textarea>
+                
+                <button type="submit" class="btn">Confirm Booking</button>
+            </form>
+            
+            <div style="margin-top: 20px; font-size: 0.9em;">
+                <p><i class="fas fa-lock"></i> Secure payment processing</p>
+                <p><i class="fas fa-phone"></i> Need help? Call +1 (800) 555-1234</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

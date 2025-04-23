@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Packages | Wanderlust Explorers</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .package-card {
+    background-color: #ffffff;  
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    transition: transform 0.3s ease;
+    margin: 20px 0;  
+}
+.packages{
+    display: grid;
+   
+    grid-template-columns: repeat(3,0.5fr);
+}
+.package-card:hover {
+    transform: translateY(-5px);  
+}
+.package-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;  
+}
+
+.package-card h3 {
+    font-size: 1.5em;
+    color: #333;  
+    margin-bottom: 15px; 
+}
+
+.package-card p {
+    font-size: 14px;
+    color: #777;  
+    margin-bottom: 20px; 
+}
+
+.package-card .price {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: black; 
+    margin-bottom: 20px; 
+}
+
+.package-card .book-now {
+    background-color: black;  
+    color: white;
+    font-size: 16px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.package-card .book-now:hover {
+    background-color: #00796b;
+}
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header_top">
+            <div class="nav_logo">
+                <img src=logo.svg" alt="">
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                ☰
+            </div>
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <!-- <li><a href="destinations.html">DESTINATION</a></li> -->
+                    <li><a href="packages.html">PACKAGES</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+            <div class="nav_button">
+                <button>BOOK NOW</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="packages">
+        <div class="package-card">
+            <img src="dubai.webp" alt="Dubai Package">
+            <h3>Dubai Package</h3>
+            <p>Explore the modern marvels of Dubai including the Burj Khalifa and the Palm Jumeirah.</p>
+            <p class="price">1,29,999</p>
+            <a class="book-now" href="dubai.html">Book Now</a>
+        </div>
+        <div class="package-card">
+            <img src="bali.webp" alt="Bali Package">
+            <h3>Bali Package</h3>
+            <p>Relax on Bali's pristine beaches and visit ancient temples for a cultural escape.</p>
+            <p class="price">8,999</p>
+            <a class="book-now" href="packageDetails.html">Book Now</a>
+        </div>
+        <div class="package-card">
+            <img src="goa.webp" alt="Goa Package">
+            <h3>Goa Package</h3>
+            <p>Discover the vibrant culture and golden beaches of Goa, perfect for relaxation and adventure.</p>
+            <p class="price">4,999</p>
+            <button class="book-now">Book Now</button>
+        </div>
+        <div class="package-card">
+            <img src="dharamshala.webp" alt="Dharamshala Package">
+            <h3>Dharamshala Package</h3>
+            <p>Experience the serene beauty and spiritual vibe of Dharamshala in the Himalayas.</p>
+            <p class="price">6,999</p>
+            <button class="book-now">Book Now</button>
+        </div>
+        <div class="package-card">
+            <img src="beach.webp" alt="Beach Escape Package">
+            <h3>Beach Escape</h3>
+            <p>Relax on beautiful beaches and enjoy the serene vibes of the ocean.</p>
+            <p class="price">7,999</p>
+            <button class="book-now">Book Now</button>
+        </div>
+        <div class="package-card">
+            <img src="mountain.webp" alt="Mountain Adventure Package">
+            <h3>Mountain Adventure</h3>
+            <p>Hike the rugged terrains and experience breathtaking mountain views.</p>
+            <p class="price">10,999</p>
+            <button class="book-now">Book Now</button>
+        </div>
+   
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <img src="logo.svg" alt="Tourly logo">
+                    </a>
+                    <p class="footer-text">
+                        A unique place with remarkable features, offering grace, charm, and elegance. A place where sophistication meets comfort, making every moment unforgettable.
+                    </p>
+                </div>
+                <div class="footer-contact">
+                    <h4 class="contact-title">Contact Us</h4>
+                    <p class="contact-text">
+                        Feel free to contact and reach us !!
+                    </p>
+                    <div>
+                        <div class="contact-item">
+                            <ion-icon name="call-outline"></ion-icon>
+                            <a href="tel:+01123456790" class="contact-link">+01 (123) 4567 90</a>
+                        </div>
+                        <div class="contact-item">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <a href="mailto:info.tourly.com" class="contact-link">info.tourly.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <ion-icon name="location-outline"></ion-icon>
+                            <address>3146 Koontz, California</address>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-form">
+                    <p class="form-text">
+                        Subscribe our newsletter for more update & news !!
+                    </p>
+                    <form action="" class="form-wrapper">
+                        <input type="email" name="email" class="input-field" placeholder="Enter Your Email" required>
+                        <button type="submit" class="btn btn-secondary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="copyright">
+                    &copy; 2022 All rights reserved
+                </p>
+                <ul class="footer-bottom-list">
+                    <li>
+                        <a href="#" class="footer-bottom-link">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-bottom-link">Term & Condition</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-bottom-link">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
